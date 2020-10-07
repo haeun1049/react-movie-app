@@ -24,12 +24,16 @@ class Home extends React.Component {
   render() {
     const { isLoading, movies } = this.state;
     return (
+
       <section className="container">
         {isLoading ? (
           <div className="loader">
             <span className="loader__text">Loading...</span>
           </div>
         ) : (
+          <div>
+          <div className="title">인기 상영작</div>
+
           <div className="movies">
             {movies.map(movie => (
               <Movie
@@ -42,6 +46,7 @@ class Home extends React.Component {
                 genres={movie.genres}
               />
             ))}
+          </div>
           </div>
         )}
       </section>

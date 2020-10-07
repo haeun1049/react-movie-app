@@ -20,7 +20,7 @@
   .movie img {
     position: relative;
     top: -50px;
-    max-width: 150px;
+    max-width: 200px;
     width: 100%;
     margin-right: 30px;
     box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
@@ -46,6 +46,8 @@
     display: flex;
     flex-wrap: wrap;
     margin: 5px 0px;
+    color: #24a990;
+
   }
   
   .movie__genres li,

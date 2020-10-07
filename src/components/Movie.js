@@ -5,7 +5,6 @@ import "./Movie.css";
 
 function Movie({ id, year, title, summary, poster, genres }) {
   return (
-
     <div className="movie">
       <Link
         to={{
@@ -19,6 +18,8 @@ function Movie({ id, year, title, summary, poster, genres }) {
           }
         }}
       >
+      <span>1</span>
+
         <img src={poster} alt={title} title={title} />
         <div className="movie__data">
           <h3 className="movie__title">{title}</h3>
